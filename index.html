@@ -13,7 +13,7 @@
       padding: 0 20px;
       color: #222;
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #111;
     }
     h1 {
@@ -23,15 +23,25 @@
     .muted {
       color: #666;
     }
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 4px 20px 12px;
+      background: #fafafa;
+    }
+    a {
+      color: #0b57d0;
+      word-break: break-word;
+    }
   </style>
 </head>
 <body>
   <h1>Política de Privacidad de OpoMosso</h1>
 
-  <p class="muted">Última actualización: 03/06/2026</p>
+  <p class="muted">Última actualización: 09/11/2026</p>
 
   <p>
-    Esta Política de Privacidad describe cómo <strong>Víctor Granados Trias, actuando bajo el nombre comercial VicodeStudios</strong>
+    Esta Política de Privacidad describe cómo <strong>Víctor Granados Trias, actuando bajo el nombre comercial VicodeStudios</strong>,
     trata la información de los usuarios de la aplicación <strong>OpoMosso</strong>,
     disponible para Android e iOS.
   </p>
@@ -39,15 +49,15 @@
   <p>
     Si tienes cualquier pregunta sobre esta Política de Privacidad o deseas ejercer tus
     derechos sobre tus datos, puedes contactar con nosotros en:
-    <strong>vicodestudios@gmail.com</strong>.
+    <a href="mailto:vicodestudios@gmail.com"><strong>vicodestudios@gmail.com</strong></a>.
   </p>
 
   <h2>1. Responsable del tratamiento</h2>
 
   <p>
-    Responsable: <strong>Víctor Granados Trias(VicodeStudios)</strong><br>
+    Responsable: <strong>Víctor Granados Trias (VicodeStudios)</strong><br>
     Aplicación: <strong>OpoMosso</strong><br>
-    Contacto: <strong>vicodestudios@gmail.com</strong>
+    Contacto: <a href="mailto:vicodestudios@gmail.com"><strong>vicodestudios@gmail.com</strong></a>
   </p>
 
   <h2>2. Información que podemos recoger</h2>
@@ -60,28 +70,72 @@
   <ul>
     <li>
       <strong>Datos de cuenta:</strong> nombre de usuario, identificador de usuario,
-      rol de usuario y preferencia de recordar sesión.
+      rol de usuario (usuario, profesor o administrador) y preferencia de recordar sesión.
+      OpoMosso no solicita tu correo electrónico real, tu nombre completo ni tu número de teléfono.
     </li>
     <li>
       <strong>Credenciales de acceso:</strong> la contraseña se utiliza para autenticar
-      al usuario mediante Firebase Authentication. No se almacena en texto plano en la aplicación.
+      al usuario mediante Firebase Authentication. No se almacena en texto plano en la aplicación
+      ni es visible para nosotros.
     </li>
     <li>
       <strong>Datos de uso educativo:</strong> resultados de tests, número de respuestas
       correctas, incorrectas y no contestadas, puntuaciones, progreso, temas practicados,
-      estadísticas y fecha de última actividad.
+      estadísticas, número de tests realizados por día (para aplicar el límite diario de la
+      versión gratuita) y fecha de última actividad.
     </li>
     <li>
-      <strong>Datos de ranking:</strong> nombre de usuario, identificador de usuario,
-      puntuaciones y estadísticas necesarias para mostrar clasificaciones dentro de la aplicación.
+      <strong>Listas de preguntas:</strong> preguntas guardadas y preguntas falladas, para que
+      puedas repasarlas.
     </li>
     <li>
-      <strong>Imagen de perfil:</strong> si el usuario decide seleccionar una imagen,
-      la aplicación puede guardar una referencia local a dicha imagen para mostrarla como perfil.
+      <strong>Datos de ranking:</strong> nombre de usuario, identificador de usuario, imagen de
+      perfil, puntuaciones y estadísticas necesarias para mostrar clasificaciones dentro de la
+      aplicación. Estos datos son visibles para otros usuarios registrados de OpoMosso.
     </li>
     <li>
-      <strong>Identificador de dispositivo:</strong> la aplicación puede usar un identificador
-      técnico del dispositivo para funciones de seguridad, control de sesión o limitación de acceso.
+      <strong>Tests cooperativos:</strong> si participas en una sala cooperativa, se guardan tu
+      nombre de usuario, tu identificador y tu resultado en esa sala, que son visibles para los
+      demás participantes. La sala se elimina automáticamente cuando todos los participantes terminan.
+    </li>
+    <li>
+      <strong>Reportes de preguntas:</strong> si reportas un error en una pregunta, se guardan
+      tu nombre de usuario, tu identificador, la pregunta afectada, el texto que escribas y la
+      fecha. Solo los administradores pueden leer los reportes.
+    </li>
+    <li>
+      <strong>Tests importados:</strong> si importas un test desde un archivo compatible
+      (por ejemplo, una hoja de cálculo), el nombre del test y sus preguntas se guardan para que
+      puedan usarse dentro de la aplicación.
+    </li>
+    <li>
+      <strong>Imagen de perfil:</strong> si decides seleccionar una imagen, esta se copia y se
+      guarda únicamente en el almacenamiento privado de tu dispositivo. En nuestros servidores solo
+      se guarda una referencia a dicha imagen; la imagen en sí no se sube a nuestros servidores.
+    </li>
+    <li>
+      <strong>Identificador de dispositivo:</strong> la aplicación usa un identificador técnico
+      del dispositivo (Android ID en Android o el identificador para el proveedor, identifierForVendor, en iOS) que se
+      asocia a tu cuenta para aplicar el límite de dos dispositivos por cuenta y evitar usos
+      indebidos.
+    </li>
+    <li>
+      <strong>Datos de suscripción Premium:</strong> si contratas OpoMosso Premium, guardamos el
+      estado de tu suscripción, su fecha de caducidad y la referencia de la compra (token o
+      identificador de transacción) proporcionada por Google Play o el App Store. El pago lo
+      procesan Google o Apple: <strong>nunca tenemos acceso a tus datos bancarios ni de tarjeta</strong>.
+    </li>
+    <li>
+      <strong>Datos de publicidad:</strong> en la versión gratuita se muestran anuncios mediante
+      Google AdMob, que puede recoger el identificador de publicidad del dispositivo (AAID en
+      Android o IDFA en iOS, este último solo si lo autorizas), la dirección IP, la ubicación
+      aproximada derivada de la IP, información del dispositivo y datos de interacción con los
+      anuncios. Los usuarios Premium no ven anuncios.
+    </li>
+    <li>
+      <strong>Datos de errores y rendimiento:</strong> mediante Firebase Crashlytics recogemos
+      informes de fallos (trazas de error, modelo de dispositivo, versión del sistema operativo,
+      versión de la app y un identificador de instalación) para detectar y corregir errores.
     </li>
     <li>
       <strong>Datos técnicos:</strong> información necesaria para el funcionamiento de Firebase
@@ -98,58 +152,100 @@
   <ul>
     <li>Crear y gestionar cuentas de usuario.</li>
     <li>Permitir el inicio de sesión y cierre de sesión.</li>
-    <li>Guardar el progreso y estadísticas de los tests.</li>
+    <li>Guardar el progreso, las estadísticas y las listas de preguntas de los tests.</li>
     <li>Mostrar rankings y resultados dentro de la aplicación.</li>
+    <li>Permitir los tests cooperativos entre usuarios.</li>
+    <li>Recibir y revisar los reportes de errores en preguntas.</li>
     <li>Gestionar preferencias de sesión, como recordar usuario.</li>
     <li>Permitir funciones relacionadas con perfil de usuario.</li>
-    <li>Proteger la seguridad de la aplicación y evitar usos indebidos.</li>
+    <li>Gestionar y verificar la suscripción Premium y aplicar los límites de la versión gratuita.</li>
+    <li>Mostrar publicidad en la versión gratuita.</li>
+    <li>Detectar, diagnosticar y corregir fallos de la aplicación.</li>
+    <li>Proteger la seguridad de la aplicación y evitar usos indebidos (por ejemplo, el límite de dispositivos).</li>
     <li>Mejorar la estabilidad y funcionamiento del servicio.</li>
   </ul>
 
   <h2>4. Servicios de terceros</h2>
 
   <p>
-    OpoMosso utiliza servicios de Google Firebase para funciones de autenticación,
-    almacenamiento y sincronización de datos.
-  </p>
-
-  <p>
-    Firebase puede tratar datos técnicos y de uso necesarios para prestar sus servicios.
-    Puedes consultar más información sobre Firebase y privacidad en:
+    OpoMosso utiliza los siguientes servicios de terceros, que pueden tratar datos según sus
+    propias políticas de privacidad:
   </p>
 
   <ul>
     <li>
-      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
-        https://firebase.google.com/support/privacy
-      </a>
+      <strong>Google Firebase</strong> (Authentication, Cloud Firestore, Cloud Functions y
+      Crashlytics): autenticación, almacenamiento y sincronización de datos, verificación de
+      compras, eliminación de cuentas e informes de errores.<br>
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>
     </li>
     <li>
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-        https://policies.google.com/privacy
-      </a>
+      <strong>Google AdMob</strong> y la <strong>plataforma de mensajes de usuario (UMP) de Google</strong>:
+      publicidad y gestión del consentimiento.<br>
+      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a>
+    </li>
+    <li>
+      <strong>Google Play</strong> (Android) y <strong>Apple App Store</strong> (iOS): procesamiento
+      de pagos y gestión de suscripciones.<br>
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a><br>
+      <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a>
     </li>
   </ul>
 
-  <h2>5. Base legal</h2>
+  <h2>5. Publicidad y consentimiento</h2>
+
+  <p>
+    En la versión gratuita, OpoMosso muestra anuncios de Google AdMob. Antes de solicitar
+    anuncios, y si te encuentras en el Espacio Económico Europeo, Reino Unido o Suiza, la
+    aplicación te muestra el formulario de consentimiento de Google (UMP), donde puedes aceptar
+    o rechazar el uso de tus datos para publicidad personalizada. Si no das tu consentimiento,
+    se pueden mostrar anuncios no personalizados o limitados.
+  </p>
+
+  <p>
+    Puedes revisar o retirar tu consentimiento en cualquier momento desde la sección de
+    opciones de privacidad de publicidad del perfil de la aplicación.
+  </p>
+
+  <p>
+    En iOS, la aplicación te pedirá permiso mediante App Tracking Transparency (ATT) antes de
+    acceder al identificador de publicidad (IDFA). Si lo rechazas, no se utilizará ese
+    identificador. También puedes cambiar este permiso en Ajustes &gt; Privacidad y seguridad &gt; Rastreo.
+    En Android, puedes restablecer o eliminar el identificador de publicidad desde los ajustes
+    de Google del dispositivo.
+  </p>
+
+  <h2>6. Base legal</h2>
 
   <p>
     Tratamos los datos del usuario sobre la base de:
   </p>
 
   <ul>
-    <li>La ejecución del servicio solicitado por el usuario.</li>
-    <li>El consentimiento del usuario cuando corresponde.</li>
-    <li>El interés legítimo en mantener la seguridad y correcto funcionamiento de la aplicación.</li>
-    <li>El cumplimiento de obligaciones legales aplicables, cuando proceda.</li>
+    <li>
+      <strong>La ejecución del servicio</strong> solicitado por el usuario (cuenta, tests,
+      estadísticas, rankings, tests cooperativos y suscripción Premium).
+    </li>
+    <li>
+      <strong>El consentimiento</strong> del usuario para la publicidad personalizada y el
+      seguimiento publicitario. Puedes retirarlo en cualquier momento.
+    </li>
+    <li>
+      <strong>El interés legítimo</strong> en mantener la seguridad y el correcto funcionamiento
+      de la aplicación (límite de dispositivos, informes de errores, prevención de abusos).
+    </li>
+    <li>
+      <strong>El cumplimiento de obligaciones legales</strong> aplicables, cuando proceda.
+    </li>
   </ul>
 
-  <h2>6. Conservación de los datos</h2>
+  <h2>7. Conservación de los datos</h2>
 
   <p>
     Conservaremos los datos mientras la cuenta del usuario permanezca activa o mientras sean
-    necesarios para prestar el servicio. El usuario puede solicitar la eliminación de sus datos
-    contactando con nosotros en <strong>vicodestudios@gmail.com</strong>.
+    necesarios para prestar el servicio. Las salas cooperativas se eliminan automáticamente al
+    finalizar, y los reportes de preguntas se eliminan una vez revisados. Los informes de errores
+    de Crashlytics se conservan durante el periodo establecido por Google (90 días).
   </p>
 
   <p>
@@ -158,24 +254,46 @@
     un periodo adicional.
   </p>
 
-  <h2>7. Eliminación de cuenta y datos</h2>
+  <h2 id="eliminar-compte">8. Eliminación de cuenta y datos</h2>
 
-  <p>
-    Para solicitar la eliminación de una cuenta o de los datos asociados a OpoMosso, el usuario
-    puede enviar un email a <strong>vicodestudios@gmail.com</strong> indicando:
-  </p>
+  <div class="box">
+    <h3>Desde la aplicación</h3>
+    <p>
+      Ve a <strong>Perfil &gt; Eliminar el meu compte</strong> y confirma con tu contraseña.
+      La cuenta y los datos asociados se eliminan de forma inmediata.
+    </p>
 
-  <ul>
-    <li>Nombre de usuario.</li>
-    <li>Solicitud clara de eliminación de cuenta o datos.</li>
-    <li>Cualquier información necesaria para verificar la titularidad de la cuenta.</li>
-  </ul>
+    <h3>Sin la aplicación</h3>
+    <p>
+      Envía un correo a <a href="mailto:vicodestudios@gmail.com?subject=Eliminar%20compte"><strong>vicodestudios@gmail.com</strong></a>
+      con el asunto <strong>"Eliminar compte"</strong>, indicando:
+    </p>
+    <ul>
+      <li>Nombre de usuario.</li>
+      <li>Solicitud clara de eliminación de cuenta o datos.</li>
+      <li>Cualquier información necesaria para verificar la titularidad de la cuenta.</li>
+    </ul>
+    <p>
+      Atenderemos la solicitud en un plazo máximo de <strong>30 días</strong>.
+    </p>
 
-  <p>
-    Atenderemos la solicitud en un plazo razonable conforme a la normativa aplicable.
-  </p>
+    <h3>Qué se elimina</h3>
+    <p>
+      La cuenta de acceso, el nombre de usuario, la referencia a la imagen de perfil, los
+      identificadores de dispositivo, las estadísticas, las preguntas guardadas y falladas, los
+      reportes enviados, los datos de suscripción guardados en nuestros servidores y la
+      participación en tests cooperativos.
+    </p>
 
-  <h2>8. Compartición de datos</h2>
+    <h3>Importante</h3>
+    <p>
+      Eliminar la cuenta <strong>no cancela la suscripción Premium</strong>. Debes cancelarla
+      desde Google Play o desde los ajustes de tu cuenta de Apple. Los datos de facturación los
+      conservan Google o Apple según sus propias políticas.
+    </p>
+  </div>
+
+  <h2>9. Compartición de datos</h2>
 
   <p>
     No vendemos los datos personales de los usuarios. Podemos compartir datos únicamente cuando
@@ -184,16 +302,20 @@
 
   <ul>
     <li>Prestar el servicio mediante proveedores técnicos, como Firebase.</li>
+    <li>Mostrar publicidad en la versión gratuita mediante Google AdMob, según tu consentimiento.</li>
+    <li>Procesar y verificar pagos mediante Google Play o Apple.</li>
+    <li>Mostrar a otros usuarios tu nombre de usuario, imagen de perfil y puntuaciones en rankings y tests cooperativos.</li>
     <li>Cumplir obligaciones legales.</li>
     <li>Proteger nuestros derechos, usuarios o la seguridad de la aplicación.</li>
   </ul>
 
-  <h2>9. Seguridad</h2>
+  <h2>10. Seguridad</h2>
 
   <p>
     Aplicamos medidas razonables para proteger la información de los usuarios. La aplicación
-    utiliza comunicaciones cifradas y servicios de backend seguros para la autenticación y
-    almacenamiento de datos.
+    utiliza comunicaciones cifradas (HTTPS), reglas de acceso en la base de datos y servicios de
+    backend seguros para la autenticación y el almacenamiento de datos. Las compras se verifican
+    en el servidor.
   </p>
 
   <p>
@@ -201,31 +323,63 @@
     seguridad absoluta.
   </p>
 
-  <h2>10. Menores de edad</h2>
+  <h2>11. Tus derechos</h2>
+
+  <p>
+    De acuerdo con el Reglamento General de Protección de Datos (RGPD) y la normativa española
+    aplicable, puedes ejercer los siguientes derechos:
+  </p>
+
+  <ul>
+    <li>Acceso a tus datos personales.</li>
+    <li>Rectificación de datos inexactos.</li>
+    <li>Supresión de tus datos.</li>
+    <li>Oposición al tratamiento y limitación del tratamiento.</li>
+    <li>Portabilidad de tus datos.</li>
+    <li>Retirada del consentimiento en cualquier momento, sin que afecte a la licitud del tratamiento previo.</li>
+  </ul>
+
+  <p>
+    Para ejercerlos, escribe a <a href="mailto:vicodestudios@gmail.com"><strong>vicodestudios@gmail.com</strong></a>.
+    Si consideras que no hemos atendido correctamente tu solicitud, puedes presentar una
+    reclamación ante la Agencia Española de Protección de Datos
+    (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>).
+  </p>
+
+  <h2>12. Menores de edad</h2>
 
   <p>
     OpoMosso está dirigida a personas que preparan oposiciones o formación relacionada.
-    No está dirigida específicamente a menores de 13 años. Si detectamos que se han recogido
-    datos de un menor sin el consentimiento necesario, tomaremos medidas para eliminarlos.
+    No está dirigida a menores de 14 años, que es la edad mínima para consentir el tratamiento de
+    sus datos en España. Si detectamos que se han recogido datos de un menor sin el consentimiento
+    necesario, tomaremos medidas para eliminarlos.
   </p>
 
-  <h2>11. Permisos de la aplicación</h2>
+  <h2>13. Permisos de la aplicación</h2>
 
   <p>
     La aplicación puede solicitar acceso a archivos o imágenes únicamente cuando el usuario
-    decide seleccionar contenido, por ejemplo para una imagen de perfil o para importar material
-    compatible. Dicho acceso se utiliza solo para la finalidad seleccionada por el usuario.
+    decide seleccionar contenido, por ejemplo para una imagen de perfil o para importar un test
+    desde un archivo compatible. Dicho acceso se utiliza solo para la finalidad seleccionada por
+    el usuario.
   </p>
-
-  <h2>12. Transferencias internacionales</h2>
 
   <p>
-    Al utilizar servicios como Firebase, los datos pueden ser tratados en servidores ubicados
-    fuera del país de residencia del usuario. En esos casos, se aplican las garantías ofrecidas
-    por los proveedores correspondientes.
+    En iOS, la aplicación también puede solicitar permiso de rastreo (App Tracking Transparency)
+    para la publicidad, tal y como se explica en el apartado 5.
   </p>
 
-  <h2>13. Cambios en esta Política de Privacidad</h2>
+  <h2>14. Transferencias internacionales</h2>
+
+  <p>
+    Al utilizar servicios como Firebase, Google AdMob, Google Play o el App Store, los datos pueden
+    ser tratados en servidores ubicados fuera del Espacio Económico Europeo, por ejemplo en
+    Estados Unidos. En esos casos, se aplican las garantías ofrecidas por los proveedores
+    correspondientes, como las Cláusulas Contractuales Tipo de la Comisión Europea o el Marco de
+    Privacidad de Datos UE-EE. UU.
+  </p>
+
+  <h2>15. Cambios en esta Política de Privacidad</h2>
 
   <p>
     Podemos actualizar esta Política de Privacidad para reflejar cambios legales, técnicos o
@@ -233,15 +387,15 @@
     inicio de este documento.
   </p>
 
-  <h2>14. Contacto</h2>
+  <h2>16. Contacto</h2>
 
   <p>
     Para cualquier consulta relacionada con privacidad o protección de datos, puedes contactar con:
   </p>
 
   <p>
-    <strong>Víctor Granados Trias(VicodeStudios)</strong><br>
-    Email: <strong>vicodestudios@gmail.com</strong>
+    <strong>Víctor Granados Trias (VicodeStudios)</strong><br>
+    Email: <a href="mailto:vicodestudios@gmail.com"><strong>vicodestudios@gmail.com</strong></a>
   </p>
 </body>
 </html>
